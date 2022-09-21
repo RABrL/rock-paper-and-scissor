@@ -30,18 +30,18 @@ function elegirAtaqueMaquina(){
 }
 function pelea(){
     if(ataqueEnemigo===ataqueJugador){
-        alert('Es un empate ambos jugador sacaron ' + ataqueEnemigo)
+        alert(`Es un empate ambos jugador sacaron ${ataqueJugador}`)
     }else if(ataqueEnemigo=='Papel' && ataqueJugador=='Piedra'){
-        alert('Tu sacaste ' + ataqueJugador + ' y la maquina saco ' + ataqueEnemigo + '\nPerdiste')
+        alert(`Tu sacaste ${ataqueJugador} y la maquina saco ${ataqueEnemigo} \nPerdiste`)
         puntosMaquina++
     }else if(ataqueEnemigo=='Tijera' && ataqueJugador=='Papel'){
-        alert('Tu sacaste ' + ataqueJugador + ' y la maquina saco ' + ataqueEnemigo + '\nPerdiste')
+        alert(`Tu sacaste ${ataqueJugador} y la maquina saco ${ataqueEnemigo} \nPerdiste`)
         puntosMaquina++
     }else if(ataqueEnemigo=='Piedra' && ataqueJugador=='Tijera'){
-        alert('Tu sacaste ' + ataqueJugador + ' y la maquina saco ' + ataqueEnemigo + '\nPerdiste')
+        alert(`Tu sacaste ${ataqueJugador} y la maquina saco ${ataqueEnemigo} \nPerdiste`)
         puntosMaquina++
     }else{
-        alert('Tu sacaste ' + ataqueJugador + ' y la maquina saco ' + ataqueEnemigo + '\nGanaste')
+        alert(`Tu sacaste ${ataqueJugador} y la maquina saco ${ataqueEnemigo} \nGanaste`)
         puntosJugador++
     }
     revisarIntentos()
